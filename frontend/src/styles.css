@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+*:focus {
+    outline: none !important;
+    border: 0 !important;
+}
+
+html,body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+mat-icon,mat-icon.matListIcon{
+    outline:none !important;
+
+}

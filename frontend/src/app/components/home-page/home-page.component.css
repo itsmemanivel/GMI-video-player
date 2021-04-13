@@ -1,0 +1,36 @@
+mat-icon,mat-icon.matListIcon{
+    outline:none !important;
+
+}
+
+
+.jumbotron {
+    text-align: center;
+}
+
+.video-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 5%;
+    /* width: 100%; */
+    
+}
+
+.video-list >mat-card {
+    /* width: 100%; */
+    margin: 1%;
+    
+}
+
+
+
+/* On screens that are 600px or less, set the background color to olive */
+/* @media screen and (max-width: 600px) {
+    .video-list >mat-card>video {
+        width: 100% !important;
+    }
+  } */
+  

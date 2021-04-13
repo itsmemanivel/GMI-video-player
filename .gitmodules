@@ -1,0 +1,3 @@
+[submodule "backend-hosted"]
+	path = backend-hosted
+	url = https://github.com/veluvj/video-player-backend.git

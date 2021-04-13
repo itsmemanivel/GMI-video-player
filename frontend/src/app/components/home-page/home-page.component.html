@@ -1,0 +1,96 @@
+<div class="container">
+    <br><br>
+    <div class="jumbotron">
+        <h1 class="display-4"><b>Video Player</b></h1>
+        <p class="lead">Store Today, Retrieve Tomorrow</p>
+        <hr class="my-4">
+        <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
+        <div class="example-button-container">
+            <button mat-fab color="primary" aria-label="Example icon button with a delete icon" (click)="openDialog()">
+              <mat-icon>add</mat-icon>
+            </button>
+        </div>
+      </div>
+      <br><br>
+
+      <div class="video-list">
+        <mat-card *ngFor="let item of urls | reverse" style="background-color: #E9ECEF;">
+            
+            <mat-card-image>
+                <video width="280" height="240" controls preload="metadata">
+                    <source src="{{item.url}}#t=1.5" type="video/mp4">
+                </video>
+            </mat-card-image><br><br>
+            <mat-card-title>{{ (item.title.length>6)? (item.title | slice:0:20)+'...':(item.title)}}</mat-card-title>
+            <mat-card-content>{{ (item.description.length>6)? (item.description |  slice:0:40)+'...':(item.description)}}</mat-card-content>
+        </mat-card>
+
+        <!-- <mat-card>
+            
+            <mat-card-image>
+                <video width="280" height="240" controls autoplay>
+                    <source src="{{url}}" type="video/mp4">
+                </video>
+            </mat-card-image>
+            <mat-card-title>{{title}}</mat-card-title>
+            <mat-card-content>{{description}}</mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            
+            <mat-card-image>
+                <video width="280" height="240" controls autoplay>
+                    <source src="{{url}}" type="video/mp4">
+                </video>
+            </mat-card-image>
+            <mat-card-title>{{title}}</mat-card-title>
+            <mat-card-content>{{description}}</mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            
+            <mat-card-image>
+                <video width="280" height="240" controls autoplay>
+                    <source src="{{url}}" type="video/mp4">
+                </video>
+            </mat-card-image>
+            <mat-card-title>{{title}}</mat-card-title>
+            <mat-card-content>{{description}}</mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            
+            <mat-card-image>
+                <video width="280" height="240" controls autoplay>
+                    <source src="{{url}}" type="video/mp4">
+                </video>
+            </mat-card-image>
+            <mat-card-title>{{title}}</mat-card-title>
+            <mat-card-content>{{description}}</mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            
+            <mat-card-image>
+                <video width="280" height="240" controls autoplay>
+                    <source src="{{url}}" type="video/mp4">
+                </video>
+            </mat-card-image>
+            <mat-card-title>{{title}}</mat-card-title>
+            <mat-card-content>{{description}}</mat-card-content>
+        </mat-card>
+
+        <mat-card>
+            
+            <mat-card-image>
+                <video width="280" height="240" controls autoplay>
+                    <source src="{{url}}" type="video/mp4">
+                </video>
+            </mat-card-image>
+            <mat-card-title>{{title}}</mat-card-title>
+            <mat-card-content>{{description}}</mat-card-content>
+        </mat-card> -->
+      </div>
+     
+
+</div>
